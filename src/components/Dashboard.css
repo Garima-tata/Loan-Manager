@@ -1,0 +1,108 @@
+/* Dashboard.css */
+body, html, #root, .dashboard {
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    width: 100%;
+  }
+  
+  .header {
+    grid-column: span 2;
+    background-color: #e8eeeb;
+    color: #0A512F;
+    padding: 1px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sidebar {
+    background-color: #132E1A;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #dfdfdf;
+    overflow-y: auto;
+  }
+  
+  
+  .widgets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    margin-bottom: 20px;
+   
+}
+.icon{
+    color: #fff;
+    background-color: #0A512F; /* Keeps the green background color */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px;
+    color: #0A512F;
+}
+.widget {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+  .divider{
+    margin-left: 15px;
+  }
+  .widget-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .widget-title {
+    color: #555;
+  }
+  
+  .recent-loans {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+  }
+.left-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
