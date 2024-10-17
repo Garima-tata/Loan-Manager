@@ -66,33 +66,7 @@ export const Charts: React.FC = () => {
       ],
     };
     
-    const config = {
-      type: 'line',
-      lineData,
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: {
-              display: true,
-              text: 'Number of Loans',
-            },
-          },
-          x: {
-            title: {
-              display: true,
-              text: 'Month',
-            },
-          },
-        },
-        plugins: {
-          title: {
-            display: true,
-            text: 'Loans Released Monthly',
-          },
-        },
-      },
-  };
+  
   
   return (
     <div className="charts-container">

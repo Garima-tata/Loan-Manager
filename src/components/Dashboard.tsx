@@ -262,11 +262,4 @@ const Header: React.FC = () => (
 
 
 
-const DataUsers: React.FC = () => (
-
-  <div>
-    
-  </div>
-);
-
 export default Dashboard;
